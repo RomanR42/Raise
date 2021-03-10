@@ -1,1 +1,44 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    line-height: 150%;
+    color: #63718E;
+    margin: 0;
+}
+
+.main-container {
+    max-width: 1180px;
+    margin: auto;
+}
+
+$colorPrimary: #C774EE;
+
+.title {
+    font-family: Epilogue, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 38px;
+    color: #111563;
+}
+
+.subtitle {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 30px;
+}
+
+.primary-btn {
+    border: none;
+    outline: none;
+    background-color: $colorPrimary;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 100%;
+    color: #ffffff;
+    cursor: pointer;
+}
+
