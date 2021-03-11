@@ -1,0 +1,105 @@
+.header {
+    display: flex;
+    height: 88px;
+    box-shadow: 0 6px 8px -6px rgba(32, 108, 164, 0.16);
+    justify-content: space-between;
+    align-items: center;
+
+    &__menu {
+        display: flex;
+        align-items: center;
+    }
+    &__search {
+        margin-right: 30px;
+        height: 24px;
+    }
+    &__call {
+        margin-right: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        font-size: 15px;
+        line-height: 20px;
+        font-weight: bold;
+
+        &-title{
+            margin-left: 5px;
+        }
+    }
+    &__navigation {
+        &-item{
+            text-decoration: none;
+            font-size: 15px;
+            line-height: 150%;
+            color: #63718E;
+            margin-right: 15px;
+            letter-spacing: 0.15px;
+        }
+    }
+    &__btn-download {
+        margin-left: 15px;
+        margin-right: 30px;
+        width: 113px;
+        height: 35px;
+        box-sizing: border-box;   
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 150%;
+        &:hover {
+            box-shadow: 0px 5px 10px rgba(76, 174, 80, 0.3);
+        }
+    }
+    &__btn-signup {
+        border: 2px solid #63718E;
+        outline: none;
+        box-sizing: border-box;
+        width: 103px;
+        height: 35px;
+        border-radius: 10px;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 150%;
+        color: #63718E;
+        cursor: pointer;
+        background: #ffffff;
+        &:hover {
+            border: 2px solid #C774EE;
+            color:#C774EE;
+        }
+    }
+
+    &__menu-mobile {
+        display: none;
+    }
+
+    @media screen and (max-width: 790px){
+        height: 70px;
+
+        &__logo {
+            margin-left: 40px;
+        }
+        
+        &__menu {
+            display: none;
+        }
+
+        &__menu-mobile {
+            display: block;
+            margin-right: 40px;
+        }
+        .menu-mobile {
+            &__btn {
+                border: none;
+                background: #ffffff;
+                outline: none;
+                color: #63718E;
+            }
+        }
+        
+    }
+}
+
+::ng-deep .mat-menu-content {
+    width: 280px;
+}

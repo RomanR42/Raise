@@ -1,2 +1,63 @@
-<p>header works!</p>
-<button class="primary-btn">Try for free</button>
+<div class="main-container">
+    <header class="header">
+        <div class="header__logo">
+            <a href="#"><img src="assets/img/header/logo.png" alt="img-logo"></a>
+        </div>
+        <div class="header__menu">
+            <a href="#" class="header__search"><img src="assets/img/header/search-alt.png" alt="img-search"></a>
+            <a href="#" class="header__call">
+                <img class="header__call-img" src="assets/img/header/mobile-vibration.png" alt="img-mobile">
+                <span class="header__call-title">Call us</span>
+            </a>
+            <nav class="header__navigation">
+                <a class="header__navigation-item" href="#">About</a>
+                <a class="header__navigation-item" href="#">Product</a>
+                <a class="header__navigation-item" href="#">FAQ</a>
+                <a class="header__navigation-item" href="#">Contact</a>
+            </nav>
+            <button class="header__btn-download primary-btn">Download</button>
+            <button class="header__btn-signup">Sign up</button>
+        </div>
+        <div class="header__menu-mobile menu-mobile">
+            <button mat-icon-button [matMenuTriggerFor]="menu" class="menu-mobile__btn">
+                <mat-icon>menu</mat-icon>
+              </button>
+              <mat-menu #menu="matMenu">
+                <button mat-menu-item>
+                  <mat-icon>manage_search</mat-icon>
+                  <span>Search</span>
+                </button>
+                <button mat-menu-item>
+                  <mat-icon>phonelink_ring</mat-icon>
+                  <span>Call us</span>
+                </button>
+                <hr>
+                <button mat-menu-item>
+                  <span>About</span>
+                </button>
+                <button mat-menu-item>
+                   <span>Product</span>
+                </button>
+                <button mat-menu-item>
+                  <span>FAQ</span>
+                </button>
+                <button mat-menu-item>
+                  <span>Contact</span>
+                </button>
+                <hr>
+                <button mat-menu-item>
+                    <mat-icon>download</mat-icon>
+                    <span>Download</span>
+                </button>
+                <button mat-menu-item>
+                    <mat-icon>assignment</mat-icon>
+                    <span>Sign up</span>
+                </button>
+
+              </mat-menu>
+        </div>
+        
+    </header>
+    
+
+</div>
