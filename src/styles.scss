@@ -38,7 +38,7 @@ $raise-theme: mat-light-theme((
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
-    line-height: 150%;
+    line-height: 27px;
     color: #63718E;
     margin: 0;
 }
@@ -46,8 +46,8 @@ body {
 .main-container {
     max-width: 1180px;
     margin: auto;
-    padding-left: 5px;
-    padding-right: 5px;
+    // padding-left: 5px;
+    // padding-right: 5px;
 }
 
 $colorPrimary: #C774EE;
@@ -77,8 +77,5 @@ $colorPrimary: #C774EE;
     line-height: 100%;
     color: #ffffff;
     cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
 }
-
-
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
