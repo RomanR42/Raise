@@ -1,0 +1,79 @@
+.faq-container {
+    max-width: 1044px;
+    margin: auto;
+    margin-bottom: 160px;
+    padding: 0px 5px;
+    .accordion {
+        &__panel {
+            margin-bottom: 20px;
+            .accordion-title {
+                font-weight: bold;
+                font-size: 22px;
+                line-height: 30px;
+                color: #111563;
+            }
+            .accordion-divider {
+                height: 0;
+                border: 0.5px solid #F0F4FD;
+            }
+            .accordion-content {
+                font-size: 18px;
+                line-height: 27px;
+                color: #63718E;
+            }
+        }
+    }
+    .faq-button {
+        width: 180px;
+        height: 60px;
+        margin:auto;
+        display: block;
+        margin-top: 55px;
+        &:hover {
+            box-shadow: 0px 5px 10px rgba(76, 174, 80, 0.3);
+        }
+    }
+    @media screen and (max-width:768px) {
+        padding: 0px 40px;
+        margin-top: 40px;
+        .title {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        ::ng-deep {
+            .mat-expansion-panel-header  {
+                padding: 45px 24px;
+                
+            }
+        }
+    }
+    @media screen and (max-width:320px) {
+        padding: 0px 10px;
+        
+        .title {
+            font-size: 22px;
+            line-height: 23px;
+        }
+        .accordion {
+            &__panel {
+                
+                .accordion-title {
+                    font-family: Epilogue;
+                    font-size: 18px;
+                    line-height: 18px;
+                }
+                .accordion-content {
+                    font-size: 16px;
+                    line-height: 24px;
+                    
+                }
+            }
+        }
+        ::ng-deep {
+            .mat-expansion-panel-header  {
+                padding: 14px 24px;
+                
+            }
+        }
+    }
+}

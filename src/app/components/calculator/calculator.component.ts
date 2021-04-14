@@ -22,6 +22,8 @@ export class CalculatorComponent implements OnInit {
       delivery: ["Delivery"],
       date:[""]
     });
+
+    
   }
 
   sendRequest() {

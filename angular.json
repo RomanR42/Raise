@@ -28,9 +28,16 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/assets/css/slick.css",
+              "src/assets/css/slick-theme.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/scripts/jquery-3.6.0.min.js",
+              "src/assets/scripts/jquery-migrate-3.3.2.min.js",
+              "src/assets/scripts/slick.min.js"
+              
+            ]
           },
           "configurations": {
             "production": {

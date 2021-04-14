@@ -1,0 +1,44 @@
+@import '../stepper/stepper.component.scss';
+.payment {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__title {
+        padding-right: 10px;
+    }
+    &__discription {
+        padding-right: 15px;
+    }
+
+    @media screen and (max-width:1300px) {
+        flex-direction: column;
+        padding: 0px 40px;
+        &__title {
+            padding-right: 95px;
+        }
+    }
+
+    @media screen and (max-width:580px){
+        padding: 0px 10px;
+        &__title {
+            padding-right: 0px;
+            font-size: 22px;
+            line-height: 23px;
+        }
+        &__discription {
+            padding-right: 0px;
+            font-size: 16px;
+            line-height: 150%;
+        }
+        &__img img {
+            width:300px;
+        }
+        
+    }
+}
+
+.second-content {
+    height: 140px !important;
+}
+

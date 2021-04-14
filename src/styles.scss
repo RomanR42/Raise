@@ -76,3 +76,21 @@ $colorPrimary: #C774EE;
     cursor: pointer;
     font-family: 'Open Sans', sans-serif;
 }
+
+.slick-dots  {
+    bottom: -80px !important;
+}
+
+.slick-dots li button:before {
+    font-size: 20px !important;
+}
+
+.slick-dots li button:before  {
+    color: #286DBD !important;
+    
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: 0.95 !important;
+}
+

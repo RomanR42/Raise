@@ -1,0 +1,207 @@
+.stepper-container {
+    max-width: 980px;
+    margin: auto;
+    padding: 0px 5px;
+    
+    .stepper-header {
+        text-align: center;
+    }
+    
+    .stepper-discription {
+        text-align: center;
+        max-width: 565px;
+        margin: auto;
+    }
+    .step {
+        font-family: Epilogue;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 23px;
+        color: #111563;
+    }
+
+    .left {
+        text-align: left;
+        margin-bottom: 20px;
+        padding: 0px 5px;
+    }
+    .slider-container {
+        display: flex;
+        justify-content: space-between;
+        align-items:flex-start;
+               
+        &__slider {
+           
+            font-family: Epilogue;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 22px;
+            line-height: 23px;
+            color: #63718E;
+        }
+        &__slider-list {
+            padding: 0;
+            padding-left: 20px;
+            margin-top: 16px;
+            
+        }
+        &__slider-item {
+            cursor:pointer;
+            list-style-type:'\2013';
+            padding-left: 10px;
+            margin-bottom: 30px;
+            
+        }
+        &__slider-item-active {
+            font-weight: bold;
+            color: #C774EE;
+            list-style-type:'\2014';
+        }
+
+        &__content {
+            max-width: 450px;
+            height: 360px;
+            padding-right: 30px;
+
+            &-second,  &-third, &-fourth,  &-fifth{
+                display: none;
+            }
+
+            .slider-content {
+                font-size: 16px;
+                line-height: 22px;
+                color: #63718E;
+                &__notice {
+                    font-weight: bold;
+                    color: #C774EE;
+                }
+            }
+                        
+        }
+
+        &__content-list {
+            padding: 0;
+            color: #C774EE;
+            li {
+                margin-bottom: 15px;
+            }
+          
+        }
+        .content-item {
+            color: #63718E;
+        }
+    }
+    
+}
+
+::ng-deep .mat-horizontal-stepper-header-container {
+        max-width: 675px;
+        margin: auto;
+}
+::ng-deep .mat-horizontal-content-container {
+    padding: 0 !important;
+}
+
+@media screen and (max-width: 768px) {
+    .stepper-container {
+        padding-left: 40px;
+        padding-right: 40px;
+
+        .slider-container {
+            flex-direction: column;
+            justify-content: flex-start;
+                                   
+            &__slider-list {
+                display: flex;
+                overflow: auto;
+                margin-top:0;
+                margin-bottom: 0;
+                padding-left: 0px;
+            }
+            &__slider-item {
+              list-style-type:'';
+              flex-shrink: 0;
+              padding-left: 0px;
+              padding-right: 30px;
+              margin-bottom: 25px;
+            }
+
+            &__content-list {
+               
+                margin-left: 20px;
+            }
+        }
+
+        .slider-content__title {
+            margin-top: 0;
+        }
+        .left {
+            padding: 0;
+        }
+    }
+
+
+}
+
+@media screen and (max-width: 655px) {
+    .slider-container {
+        &__slider {
+            width:450px;
+        }
+      
+    }
+}
+
+@media screen and (max-width:480px) {
+    .slider-container {
+        &__slider {
+            width:350px;
+        }
+      
+    }
+}
+
+@media screen and (max-width: 390px) { 
+    .stepper-container {
+        padding-left: 10px;
+        padding-right: 10px;
+
+        .stepper-header {
+           
+            font-size: 22px;
+            line-height: 23px;
+           
+        }
+        .stepper-discription {
+            text-align: left;
+            width: 100%;
+            font-size: 16px;
+            line-height: 150%;
+            
+        }
+        .step {
+            font-size: 20px;
+            p {
+                margin-bottom: 5px;
+                margin-top: 5px;
+            }
+        }
+
+        .slider-container {
+            &__slider {
+                width:300px;
+            }
+            &__slider-list {
+                font-size: 16px;
+                line-height: 22px;
+                font-family: 'Open Sans';
+            }
+            &__content {
+                padding-right: 0;
+            }
+        }
+
+
+    }
+}

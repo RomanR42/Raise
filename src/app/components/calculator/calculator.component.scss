@@ -66,7 +66,7 @@
         } 
         .select {
             appearance: none;
-            background: url(/assets/img/calculator/arrow.svg) no-repeat right #F9FAFC;
+            background: url(/projects/landing/assets/img/calculator/arrow.svg) no-repeat right #F9FAFC;
             background-position-x: calc(100% - 17px);
 
         }
@@ -104,9 +104,16 @@
             }
         }
 
-        
-       
-
+        .date-picker {
+            background: #F9FAFC;
+            box-shadow: 0px 1px 3px rgba(5, 41, 83, 0.14);
+            border-radius: 10px;
+           
+        }
+        .mat-label {
+            margin-left: 10px;
+            margin-bottom: 10px;
+        }
 
     }
 
@@ -121,46 +128,106 @@
 
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:1085px) {
 
     .calculator {
-
+        max-width: 100%;
+        height: 473px;
+        margin-left:0;
+        margin-right: 0;
+        border-radius: 0;
         &__form {
+            max-width: 620px;
+            margin: auto;
+            
             &-first-row{
                 flex-direction: column;
+                margin-bottom: 16px;
             }
             &-second-row{
                 flex-direction: column;
             }
+
+            &-group-first :last-child {
+                margin-right: 0;
+            }
+            
             &-group-second {
+                margin-top: 16px;
                 .calculator__price {
                     display: none;
                 }
             }
+            &-group-third :last-child {
+                margin-right: 0;
+            }
             &-group-fourth {
                 .calculator__price {
                     display: inline-block;
+                    margin-left: 0;
+                    margin-right: 20px;
+                    width: 300px;
+                    box-sizing: border-box;
+                    padding-left: 170px;
                 }
+                margin-top: 30px;
+            }
+            .small-input-field {
+                width: 300px;
+            }
+            .makelarge-input-field {
+                width: 300px !important;
+            }
+            .inc {
+                width: 200px !important;
+                padding-left: 85px !important;
             }
         }
+    }
+
+    ::ng-deep .mat-form-field-wrapper {
+       width: 300px !important;
     }
 
 
 }
 
-@media screen and (max-width:320px) {
+@media screen and (max-width:635px) {
 
     .calculator {
-
+        height: 700px;
+        max-width: 310px;
+        margin: auto;
+        margin-top: 165px;
+        &__header {
+            font-size: 22px;
+            line-height: 23px;
+            padding-top: 23px;
+        }
+        &__title{
+            font-size: 16px;
+            line-height: 24px;
+            padding-left: 10px;
+            padding-right: 10px;
+            margin-top: 10px;
+            margin-bottom: 40px;
+        }
         &__form {
+            padding-left: 10px;
+            padding-right: 10px;
+            &-first-row {
+                margin-bottom: 0;
+            }
             &-group-first {
                 display: flex;
                 flex-direction: column;
+                
              }
            
             &-group-second {
                display: flex;
                flex-direction: column;
+               margin-top: 0;
             }
             &-group-third {
                 display: flex;
@@ -169,11 +236,47 @@
             &-group-fourth {
                 display: flex;
                 flex-direction: column;
+                margin-top: 24px;
+                align-items: center;
             }
+            .small-input-field {
+                width:290px;
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+            .makelarge-input-field {
+                width: 290px !important;
+            } 
+            .inc-btns {
+                margin-right: 0 ;
+                margin-bottom: 20px;
+            }
+            .inc {
+                width: 190px !important;
+                padding-left: 78px !important;
+            }
+            .date-picker {
+                margin-bottom: 20px;
+            }
+
+            .calculator__price{
+                padding: 0;
+                margin: 0;
+                margin-bottom: 28px;
+                text-align: center;
+               
+            }
+
+
+
         }
+
+       
     }
 
-
+    ::ng-deep .mat-form-field-wrapper {
+        width: 290px !important;
+    }
 }
 
 ::ng-deep .mat-form-field-wrapper {
@@ -190,3 +293,12 @@
     padding: 0;
     height: 50px;
 }
+
+::ng-deep .mat-form-field-flex {
+    align-items: center !important;
+}
+
+::ng-deep .mat-form-field-label-wrapper {
+    top:-1.19em;
+}
+
